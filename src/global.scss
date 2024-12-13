@@ -35,3 +35,145 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+
+
+/* Paleta de colores*/
+//Primario
+:root {
+  --ion-color-first: #001F3F;
+  --ion-color-first-rgb: 0,31,63;
+  --ion-color-first-contrast: #ffffff;
+  --ion-color-first-contrast-rgb: 255,255,255;
+  --ion-color-first-shade: #001b37;
+  --ion-color-first-tint: #1a3552;
+}
+
+.ion-color-first {
+  --ion-color-base: var(--ion-color-first);
+  --ion-color-base-rgb: var(--ion-color-first-rgb);
+  --ion-color-contrast: var(--ion-color-first-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-first-contrast-rgb);
+  --ion-color-shade: var(--ion-color-first-shade);
+  --ion-color-tint: var(--ion-color-first-tint);
+}
+//Secundario
+:root {
+  --ion-color-secondary: #3A6D8C;
+  --ion-color-secondary-rgb: 58,109,140;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255,255,255;
+  --ion-color-secondary-shade: #33607b;
+  --ion-color-secondary-tint: #4e7c98;
+}
+
+.ion-color-secondary {
+  --ion-color-base: var(--ion-color-secondary);
+  --ion-color-base-rgb: var(--ion-color-secondary-rgb);
+  --ion-color-contrast: var(--ion-color-secondary-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-secondary-contrast-rgb);
+  --ion-color-shade: var(--ion-color-secondary-shade);
+  --ion-color-tint: var(--ion-color-secondary-tint);
+}
+//Terceario
+:root {
+  --ion-color-tertiary: #FFFFFF;
+  --ion-color-tertiary-rgb: 255,255,255;
+  --ion-color-tertiary-contrast: #000000;
+  --ion-color-tertiary-contrast-rgb: 0,0,0;
+  --ion-color-tertiary-shade: #e0e0e0;
+  --ion-color-tertiary-tint: #ffffff;
+}
+
+.ion-color-tertiary {
+  --ion-color-base: var(--ion-color-tertiary);
+  --ion-color-base-rgb: var(--ion-color-tertiary-rgb);
+  --ion-color-contrast: var(--ion-color-tertiary-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-tertiary-contrast-rgb);
+  --ion-color-shade: var(--ion-color-tertiary-shade);
+  --ion-color-tint: var(--ion-color-tertiary-tint);
+}
+//Cuaternario
+:root {
+  --ion-color-cuaternary: #ead8b1;
+  --ion-color-cuaternary-rgb: 234,216,177;
+  --ion-color-cuaternary-contrast: #000000;
+  --ion-color-cuaternary-contrast-rgb: 0,0,0;
+  --ion-color-cuaternary-shade: #cebe9c;
+  --ion-color-cuaternary-tint: #ecdcb9;
+}
+
+.ion-color-cuaternary {
+  --ion-color-base: var(--ion-color-cuaternary);
+  --ion-color-base-rgb: var(--ion-color-cuaternary-rgb);
+  --ion-color-contrast: var(--ion-color-cuaternary-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-cuaternary-contrast-rgb);
+  --ion-color-shade: var(--ion-color-cuaternary-shade);
+  --ion-color-tint: var(--ion-color-cuaternary-tint);
+}
+
+
+
+
+
+/* Estilos globales */
+
+/* Aplica "Roboto" solo a los campos de texto */
+ion-button, ion-input, ion-textarea,ion-item {
+  font-family: "Roboto", sans-serif;
+  text-transform: none; /* Asegura que el texto no esté en mayúsculas */
+}
+
+/* Aplica "Amatic SC" a los demás elementos */
+body, ion-card, ion-card-title, ion-header, ion-toolbar, ion-title, ion-note {
+  font-family: "Amatic SC", cursive;
+}
+
+ion-content {
+  --padding-top: 70px;
+  --keyboard-offset: none !important;
+
+}
+
+
+.logoStyle{
+  width: 250px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.centrarElementos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.ion-card-medium {
+  width: 80%;
+  height: auto;
+  margin: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card-narrow {
+  width: 60%;
+  margin: 0 auto;
+  background: var(--ion-color-cuaternary);
+  border-radius: 10px;
+}
+
+.main-title {
+  color: var(--ion-color-first);
+  text-align: center;
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+}
